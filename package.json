@@ -1,7 +1,8 @@
 {
   "name": "quick-encouragement",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "You are awesome.",
+  "repository": "https://github.com/jpray/quick-encouragement",
   "main": "index.js",
   "dependencies": {
     "cordova-android": "^7.1.4",
