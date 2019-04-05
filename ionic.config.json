@@ -1,6 +1,8 @@
 {
   "name": "Quick Encouragement",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "custom",
   "id": "77eb38d8"
 }
