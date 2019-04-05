@@ -1,0 +1,63 @@
+.view-swapper-container {
+  transition: height 1s ease 0s;
+  overflow-y: hidden;
+}
+
+.view-swapper--hide {
+  animation: fadeout 0.3s;
+  animation-timing-function: ease;
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.view-swapper--show {
+  animation: fadein 0.3s;
+  animation-timing-function: ease;
+  opacity: 1;
+  position: static;
+}
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+    position: absolute;
+  }
+
+  50% {
+    opacity: 0;
+    position: absolute;
+  }
+
+  51% {
+    opacity: 0;
+    position: static;
+  }
+
+  100% {
+    opacity: 1;
+    position: static;
+  }
+}
+
+@keyframes fadeout {
+  0% {
+    opacity: 1;
+    position: static;
+  }
+
+  50% {
+    opacity: 0;
+    position: static;
+  }
+
+  51% {
+    opacity: 0;
+    position: absolute;
+  }
+
+  100% {
+    opacity: 0;
+    position: absolute;
+  }
+}

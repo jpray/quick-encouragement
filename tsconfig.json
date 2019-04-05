@@ -1,0 +1,9 @@
+{
+    "compilerOptions": {
+        "target": "ESNext",
+        "baseUrl": ".",
+        "paths": {},
+        "moduleResolution": "node",
+        "lib": ["dom", "es2017.object", "es7"]
+    }
+}
