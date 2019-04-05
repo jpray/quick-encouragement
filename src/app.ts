@@ -1,4 +1,4 @@
-import { define, html } from "./wc-toolkit";
+import { define, html, useRequestUpdate } from "./wc-toolkit";
 import "./app.css";
 import kindWords from "./content/kind-words.json";
 
@@ -17,11 +17,13 @@ function getRandomInt(min, max) {
 
 const App = () => {
 
+    const requestUpdate = useRequestUpdate();
 
     let kindWord = kindWords[getRandomInt(0, kindWords.length-1)]
 
     return html`
-        You are ${kindWord}
+        <div>You are ${kindWord}</div>        
+        <a @click="${requestUpdate}">🔄</a>
     `
 }
 
