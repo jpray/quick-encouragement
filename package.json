@@ -28,10 +28,13 @@
     "tslib": "^1.9.3",
     "typescript": "^3.4.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "http-server": "^0.11.1"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config && node ./tasks/build.js",
+    "build": "rollup --config && node ./tasks/build-mobile.js",
+    "build-web": "rollup --config && node ./tasks/build-web.js",
     "dev": "rollup --config --watch",
     "ionic:serve": "cd www && http-server ."
   },
